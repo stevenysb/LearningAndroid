@@ -1,0 +1,27 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zoe.litter.BlankFragment">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tl_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0176da"
+        android:theme="@style/Theme.ToolBar.ZhiHu"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/hello_blank_fragment"/>
+
+</FrameLayout>
