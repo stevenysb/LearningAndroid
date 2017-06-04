@@ -1,4 +1,4 @@
-package com.zoe.litter.drawerlayout;
+package com.zoe.litter;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.zoe.litter.drawerlayout", appContext.getPackageName());
+        assertEquals("com.zoe.litter", appContext.getPackageName());
     }
 }

@@ -1,4 +1,4 @@
-package com.zoe.litter.drawerlayout;
+package com.zoe.litter;
 
 import org.junit.Test;
 

@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.zoe.litter.R;
+import com.zoe.litter.coordinatelayout.AppBarActivity;
+import com.zoe.litter.coordinatelayout.CoordinateActivity;
 import com.zoe.litter.drawLayout.DrawLayoutActivity;
 import com.zoe.litter.toolBar.ToolBarActivity;
 
@@ -25,7 +27,7 @@ public class StartActivity extends Activity implements ListView.OnItemClickListe
     private void initView() {
         ListView lv_list = (ListView) findViewById(R.id.lv_list);
         lv_list.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
-                android.R.id.text1, new String[]{"drawLayout","toolBar"}));
+                android.R.id.text1, new String[]{"drawLayout","toolBar","CoordinateLayout","AppBarLayout"}));
         lv_list.setOnItemClickListener(this);
     }
 
@@ -37,6 +39,12 @@ public class StartActivity extends Activity implements ListView.OnItemClickListe
                 break;
             case 1:
                 startActivity(new Intent(this, ToolBarActivity.class));
+                break;
+            case 2:
+                startActivity(new Intent(this, CoordinateActivity.class));
+                break;
+            case 3:
+                startActivity(new Intent(this, AppBarActivity.class));
                 break;
         }
     }
