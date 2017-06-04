@@ -19,7 +19,7 @@ import java.util.Map;
 
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity implements ListView.OnItemClickListener {
+public class DrawLayout2Activity extends AppCompatActivity implements ListView.OnItemClickListener {
 
     private ListView lv_list;
     private DrawerLayout dl_layout;

@@ -9,15 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".drawLayout.MainActivity">
-
-        </activity>
-        <activity android:name=".drawLayout.Main2Activity">
+        <activity
+            android:name=".base.StartActivity"
+            android:label="@string/title_activity_start"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".drawLayout.DrawLayout2Activity">
+        </activity>
+        <activity android:name=".drawLayout.DrawLayoutActivity">
+        </activity>
+        <activity
+            android:name=".toolBar.ToolBarActivity"
+            android:label="@string/title_activity_tool_bar"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
 

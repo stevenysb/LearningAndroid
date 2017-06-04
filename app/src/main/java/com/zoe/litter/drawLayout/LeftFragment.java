@@ -36,7 +36,7 @@ public class LeftFragment extends Fragment implements View.OnClickListener {
         if(mListener != null){
             mListener.onFragment();
         }
-        startActivity(new Intent(getActivity(),MainActivity.class));
+        startActivity(new Intent(getActivity(),DrawLayout2Activity.class));
     }
 
     public interface OnFragmentListener {

@@ -27,4 +27,6 @@
     <string name="simple_drawer">SimpleDrawer</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="title_activity_tool_bar">ToolBarActivity</string>
+    <string name="title_activity_start">StartActivity</string>
 </resources>

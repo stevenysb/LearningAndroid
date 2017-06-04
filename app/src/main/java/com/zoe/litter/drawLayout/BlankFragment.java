@@ -3,7 +3,6 @@ package com.zoe.litter.drawLayout;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,13 +37,6 @@ public class BlankFragment extends Fragment {
         String text = getArguments().get("text").toString();
         TextView tv_text = (TextView) view.findViewById(R.id.tv_text);
         tv_text.setText(text);
-
-        Toolbar tl_bar = (Toolbar) view.findViewById(R.id.tl_bar);
-        tl_bar.inflateMenu(R.menu.toolbar_menu);
-        tl_bar.setNavigationIcon(R.mipmap.ic_drawer_home);
-
-        tl_bar.setTitle(R.string.home_page);
-        tl_bar.setTitleTextColor(getResources().getColor(android.R.color.white));
 
         return view;
     }

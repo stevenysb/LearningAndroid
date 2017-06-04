@@ -9,7 +9,7 @@ import android.view.View;
 
 import com.zoe.litter.R;
 
-public class Main2Activity extends Activity implements LeftFragment.OnFragmentListener{
+public class DrawLayoutActivity extends Activity implements LeftFragment.OnFragmentListener{
     private DrawerLayout dl_layout;
 
     @Override
