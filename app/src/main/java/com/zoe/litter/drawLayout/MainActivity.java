@@ -1,4 +1,4 @@
-package com.zoe.litter;
+package com.zoe.litter.drawLayout;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+
+import com.zoe.litter.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

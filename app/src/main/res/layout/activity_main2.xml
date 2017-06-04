@@ -6,7 +6,7 @@
     android:id="@+id/dl_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.zoe.litter.Main2Activity">
+    tools:context="com.zoe.litter.drawLayout.Main2Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
 
     <fragment
         android:id="@+id/fg_left"
-        android:name="com.zoe.litter.LeftFragment"
+        android:name="com.zoe.litter.drawLayout.LeftFragment"
         android:layout_width="150dp"
         android:layout_height="match_parent"
         android:layout_gravity="left"
@@ -39,7 +39,7 @@
 
     <fragment
         android:id="@+id/fg_right"
-        android:name="com.zoe.litter.RightFragment"
+        android:name="com.zoe.litter.drawLayout.RightFragment"
         android:layout_width="150dp"
         android:layout_height="match_parent"
         android:layout_gravity="right"

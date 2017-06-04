@@ -1,4 +1,4 @@
-package com.zoe.litter;
+package com.zoe.litter.drawLayout;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+
+import com.zoe.litter.R;
 
 public class Main2Activity extends Activity implements LeftFragment.OnFragmentListener{
     private DrawerLayout dl_layout;
