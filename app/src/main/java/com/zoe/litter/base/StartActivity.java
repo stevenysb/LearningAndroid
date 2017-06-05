@@ -9,13 +9,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.zoe.litter.R;
+import com.zoe.litter.TabLayou_ViewPager.TabLayoutViewPagerActivity;
 import com.zoe.litter.coordinatelayout.AppBarActivity;
 import com.zoe.litter.coordinatelayout.CoordinateActivity;
 import com.zoe.litter.drawLayout.DrawLayoutActivity;
 import com.zoe.litter.toolBar.ToolBarActivity;
 
-
-public class StartActivity extends Activity implements ListView.OnItemClickListener{
+public class StartActivity extends Activity implements ListView.OnItemClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,13 +27,14 @@ public class StartActivity extends Activity implements ListView.OnItemClickListe
     private void initView() {
         ListView lv_list = (ListView) findViewById(R.id.lv_list);
         lv_list.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
-                android.R.id.text1, new String[]{"drawLayout","toolBar","CoordinateLayout","AppBarLayout"}));
+                android.R.id.text1, new String[]{"drawLayout", "toolBar", "CoordinateLayout",
+                "AppBarLayout","TabLayoutViewPager"}));
         lv_list.setOnItemClickListener(this);
     }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        switch (position){
+        switch (position) {
             case 0:
                 startActivity(new Intent(this, DrawLayoutActivity.class));
                 break;
@@ -45,6 +46,9 @@ public class StartActivity extends Activity implements ListView.OnItemClickListe
                 break;
             case 3:
                 startActivity(new Intent(this, AppBarActivity.class));
+                break;
+            case 4:
+                startActivity(new Intent(this, TabLayoutViewPagerActivity.class));
                 break;
         }
     }

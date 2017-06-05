@@ -32,6 +32,8 @@
         </activity>
         <activity android:name=".coordinatelayout.AppBarActivity">
         </activity>
+        <activity android:name=".TabLayou_ViewPager.TabLayoutViewPagerActivity">
+        </activity>
     </application>
 
 </manifest>
