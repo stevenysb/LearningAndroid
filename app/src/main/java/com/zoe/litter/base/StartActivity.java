@@ -11,8 +11,11 @@ import android.widget.ListView;
 import com.zoe.litter.R;
 import com.zoe.litter.TabLayou_ViewPager.TabLayoutViewPagerActivity;
 import com.zoe.litter.coordinatelayout.AppBarActivity;
+import com.zoe.litter.coordinatelayout.AppBarLayout_TabLayout_Activity;
 import com.zoe.litter.coordinatelayout.CoordinateActivity;
+import com.zoe.litter.coordinatelayout.FloatingActionButtonActivity;
 import com.zoe.litter.drawLayout.DrawLayoutActivity;
+import com.zoe.litter.mvp.UserLoginActivity;
 import com.zoe.litter.toolBar.ToolBarActivity;
 
 public class StartActivity extends Activity implements ListView.OnItemClickListener {
@@ -28,7 +31,8 @@ public class StartActivity extends Activity implements ListView.OnItemClickListe
         ListView lv_list = (ListView) findViewById(R.id.lv_list);
         lv_list.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
                 android.R.id.text1, new String[]{"drawLayout", "toolBar", "CoordinateLayout",
-                "AppBarLayout","TabLayoutViewPager"}));
+                "AppBarLayout", "TabLayoutViewPager", "MVP", "FloatingActionButton",
+                "AppBarLayout_TabLayout"}));
         lv_list.setOnItemClickListener(this);
     }
 
@@ -49,6 +53,15 @@ public class StartActivity extends Activity implements ListView.OnItemClickListe
                 break;
             case 4:
                 startActivity(new Intent(this, TabLayoutViewPagerActivity.class));
+                break;
+            case 5:
+                startActivity(new Intent(this, UserLoginActivity.class));
+                break;
+            case 6:
+                startActivity(new Intent(this, FloatingActionButtonActivity.class));
+                break;
+            case 7:
+                startActivity(new Intent(this, AppBarLayout_TabLayout_Activity.class));
                 break;
         }
     }

@@ -34,6 +34,22 @@
         </activity>
         <activity android:name=".TabLayou_ViewPager.TabLayoutViewPagerActivity">
         </activity>
+        <activity android:name=".mvp.UserLoginActivity">
+        </activity>
+        <activity
+            android:name=".coordinatelayout.FloatingActionButtonActivity"
+            android:label="@string/title_activity_floating_action_button"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".coordinatelayout.AppBarLayout_TabLayout_Activity"
+            android:label="@string/title_activity_app_bar_layout__tab_layout_"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="AppBarLayout_TabLayout_Activity"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -43,7 +43,8 @@ public class MyBehavior extends CoordinatorLayout.Behavior<Button> {
     }
 
     private void setPosition(View v, int x, int y) {
-        CoordinatorLayout.MarginLayoutParams layoutParams = (CoordinatorLayout.MarginLayoutParams) v.getLayoutParams();
+        CoordinatorLayout.MarginLayoutParams layoutParams = (CoordinatorLayout
+                .MarginLayoutParams) v.getLayoutParams();
         layoutParams.leftMargin = x;
         layoutParams.topMargin = y;
         v.setLayoutParams(layoutParams);

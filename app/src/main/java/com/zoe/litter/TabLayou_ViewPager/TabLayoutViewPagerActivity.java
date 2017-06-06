@@ -8,6 +8,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
 import com.zoe.litter.R;
+import com.zoe.litter.adapter.Tab_Adapter;
 import com.zoe.litter.common.TextFragment;
 
 import java.util.ArrayList;
@@ -31,7 +32,6 @@ public class TabLayoutViewPagerActivity extends AppCompatActivity {
         initData();
 
     }
-
 
     private void initView() {
         tab_FindFragment_title = (TabLayout) findViewById(R.id.tab_FindFragment_title);
