@@ -34,5 +34,10 @@
     <string name="title_activity_floating_action_button">FloatingActionButtonActivity</string>
     <string name="title_activity_app_bar_layout__tab_layout_">AppBarLayout_TabLayout
     </string>
+    <string name="title_activity_collapsing_toolbar_layout">CollapsingToolbarLayoutActivity</string>
+
+
+    <string name="card_string">程序计数器 程序计数器是线程私有的区域，很好理解嘛~，每个线程当然得有个计数器记录当前执行到那个指令。占用的内存空间小。</string>
+
 
 </resources>

@@ -12,6 +12,7 @@ import com.zoe.litter.R;
 import com.zoe.litter.TabLayou_ViewPager.TabLayoutViewPagerActivity;
 import com.zoe.litter.coordinatelayout.AppBarActivity;
 import com.zoe.litter.coordinatelayout.AppBarLayout_TabLayout_Activity;
+import com.zoe.litter.coordinatelayout.CollapsingToolbarLayoutActivity;
 import com.zoe.litter.coordinatelayout.CoordinateActivity;
 import com.zoe.litter.coordinatelayout.FloatingActionButtonActivity;
 import com.zoe.litter.drawLayout.DrawLayoutActivity;
@@ -32,7 +33,7 @@ public class StartActivity extends Activity implements ListView.OnItemClickListe
         lv_list.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
                 android.R.id.text1, new String[]{"drawLayout", "toolBar", "CoordinateLayout",
                 "AppBarLayout", "TabLayoutViewPager", "MVP", "FloatingActionButton",
-                "AppBarLayout_TabLayout"}));
+                "AppBarLayout_TabLayout","CollapsingToolbarLayou"}));
         lv_list.setOnItemClickListener(this);
     }
 
@@ -62,6 +63,9 @@ public class StartActivity extends Activity implements ListView.OnItemClickListe
                 break;
             case 7:
                 startActivity(new Intent(this, AppBarLayout_TabLayout_Activity.class));
+                break;
+            case 8:
+                startActivity(new Intent(this, CollapsingToolbarLayoutActivity.class));
                 break;
         }
     }

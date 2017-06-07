@@ -25,4 +25,7 @@
         <item name="android:src">@mipmap/ic_menu_more_overflow</item>
     </style>
 
+    <style name="TextAppearance.AppCompat.Title" parent="android:TextAppearance.DeviceDefault.Large">
+    </style>
+
 </resources>
