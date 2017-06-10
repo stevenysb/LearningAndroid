@@ -14,8 +14,8 @@ import android.view.View;
 
 import com.zoe.litter.R;
 import com.zoe.litter.adapter.Tab_Adapter;
-import com.zoe.litter.common.ItemFragment;
-import com.zoe.litter.common.TextFragment;
+import com.zoe.litter.common.fragment.ItemFragment;
+import com.zoe.litter.common.fragment.TextFragment;
 import com.zoe.litter.dummy.DummyContent;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.zoe.litter.common;
+package com.zoe.litter.common.fragment;
 
 import android.content.Context;
 import android.os.Bundle;

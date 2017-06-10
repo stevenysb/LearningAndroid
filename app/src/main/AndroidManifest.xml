@@ -56,6 +56,9 @@
             android:label="@string/title_activity_collapsing_toolbar_layout"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity android:name=".recycleview.RecycleViewActivity"
+            android:theme="@style/MyAppTheme">
+        </activity>
     </application>
 
 </manifest>

@@ -9,7 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.zoe.litter.R;
 import com.zoe.litter.adapter.Tab_Adapter;
-import com.zoe.litter.common.TextFragment;
+import com.zoe.litter.common.fragment.TextFragment;
 
 import java.util.ArrayList;
 import java.util.List;

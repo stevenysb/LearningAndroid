@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.zoe.litter.R;
-import com.zoe.litter.common.ItemFragment.OnListFragmentInteractionListener;
+import com.zoe.litter.common.fragment.ItemFragment.OnListFragmentInteractionListener;
 import com.zoe.litter.dummy.DummyContent.DummyItem;
 
 import java.util.List;

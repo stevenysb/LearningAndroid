@@ -17,6 +17,7 @@ import com.zoe.litter.coordinatelayout.CoordinateActivity;
 import com.zoe.litter.coordinatelayout.FloatingActionButtonActivity;
 import com.zoe.litter.drawLayout.DrawLayoutActivity;
 import com.zoe.litter.mvp.UserLoginActivity;
+import com.zoe.litter.recycleview.RecycleViewActivity;
 import com.zoe.litter.toolBar.ToolBarActivity;
 
 public class StartActivity extends Activity implements ListView.OnItemClickListener {
@@ -33,7 +34,7 @@ public class StartActivity extends Activity implements ListView.OnItemClickListe
         lv_list.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
                 android.R.id.text1, new String[]{"drawLayout", "toolBar", "CoordinateLayout",
                 "AppBarLayout", "TabLayoutViewPager", "MVP", "FloatingActionButton",
-                "AppBarLayout_TabLayout","CollapsingToolbarLayou"}));
+                "AppBarLayout_TabLayout","CollapsingToolbarLayou","RecycleView"}));
         lv_list.setOnItemClickListener(this);
     }
 
@@ -66,6 +67,9 @@ public class StartActivity extends Activity implements ListView.OnItemClickListe
                 break;
             case 8:
                 startActivity(new Intent(this, CollapsingToolbarLayoutActivity.class));
+                break;
+            case 9:
+                startActivity(new Intent(this, RecycleViewActivity.class));
                 break;
         }
     }
